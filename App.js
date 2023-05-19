@@ -1,24 +1,12 @@
-{<script>
-    const heading = React.createElement("h1",{},"Hello React!"); // accepts three argumemnts
+ import React from "react";
+ import ReactDOM from "react-dom/client";
 
-    const root = ReactDOM.createRoot(document.getElementById("root")); // responsible for render the whole react elements
+// React Element 
 
-    root.render(heading);
-</script> }
+const heading = React.createElement("h1",{id:"heading"},"Hello Vivek");
 
- const parent = React.createElement("div",{id:parent},
- React.createElement("div",{id:child},
- [React.createElement("h1",{},"   I'm h1 Tag"),
- React.createElement("h2",{},"   I'm h2 Tag")]),
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
- React.createElement("div",{id:child2},
- [React.createElement("h1",{},"   I'm h1 Tag"),
- React.createElement("h2",{},"   I'm h2 Tag")])
- );
-
- const root = React.DOM.createRoot(document.getElementById('root'));
- 
- root.render(parent);
-
+root.render(heading);
 
 
